@@ -1,52 +1,34 @@
-.footer {
-  padding-top: 45px;
-  padding-bottom: 35px;
-  margin-top: 45px;
+footer {
+  background: $dark-grey;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 
-.footer_link {
-  font-size: 14px;
-  line-height: 24px;
-  transition: color $basic-transition;
+.footer__social {
+  margin-bottom: 150px;
+}
 
-  &:hover {
-    color: $red;
+.footer__social--img {
+  width: 30px;
+  height: 30px;
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
   }
 }
 
-.footer_addr {
-  p {
-    max-width: 205px;
-    width: 100%;
-    font-size: 14px;
-    line-height: 24px;
-    margin-bottom: 20px;
-  }
-}
+.footer__links {
+  width: auto;
 
-.priv {
-  font-size: 14px;
-}
+  & a {
+    margin-bottom: 35px;
 
-.priv-link {
-  color: rgba($black, 0.4);
-  margin: 0 12px;
-  transition: color $basic-transition;
-
-  @media (max-width: $max-sm) {
-    font-size: 14px;
-
-    // bad practice
-    &:first-of-type {
-      margin-left: 0;
+    &:last-child {
+      margin-bottom: 0;
     }
-
-    &:last-of-type {
-      margin-right: auto;
-    }
-  }
-
-  &:hover {
-    color: $red;
   }
 }
