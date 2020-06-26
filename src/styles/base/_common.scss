@@ -1,0 +1,134 @@
+// Основные стили, дополнение стилей reset.css для тегов которые убирают ненужные стили
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 2px auto $red;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+button,
+a,
+div {
+  letter-spacing: 0.05em;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+body {
+  max-width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background: $white;
+  padding-top: 95px;
+
+  @media (min-width: $min-sm) {
+    padding-top: 125px;
+  }
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  outline: none !important;
+}
+
+main {
+  position: relative;
+  transition: opacity 0.55s, transform 0.55s;
+
+  &:not(.is-loaded) {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  //Писать свои значения
+  // @media (min-width: $min-md) {
+  //   max-width: 980px;
+  // }
+
+  // @media (min-width: $min-lg) {
+  //   max-width: 1110px;
+  // }
+
+  // @media (min-width: 1500px) {
+  //   max-width: 1210px;
+  // }
+}
+
+.d-md-block {
+  @media (min-width: $min-md) {
+    display: block;
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.mob-hidden {
+  @media (max-width: $max-sm) {
+    display: none;
+  }
+}
+
+.mob-visible {
+  @media (min-width: $min-sm) {
+    display: none;
+  }
+}
+
+.d-sm-block {
+  @media (min-width: $min-sm) {
+    display: block;
+  }
+}
+
+.js-visible {
+  @media (min-width: $min-sm) {
+    transition: all $basic-transition;
+
+    &:not(.is-visible) {
+      transform: translateY(30px);
+    }
+  }
+}

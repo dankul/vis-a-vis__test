@@ -1,0 +1,29 @@
+.d-flex {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.d-flex--column {
+  flex-direction: column;
+}
+
+.d-flex--space-between {
+  justify-content: space-between;
+}
+
+.d-flex--space-center {
+  justify-content: center;
+}
+
+.d-flex--align-start {
+  align-items: flex-start;
+}
+
+.d-flex--align-center {
+  align-items: center;
+}
+
+.d-flex--nowrap {
+  flex-wrap: nowrap;
+}

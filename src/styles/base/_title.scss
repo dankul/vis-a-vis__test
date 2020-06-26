@@ -1,0 +1,22 @@
+.title-main-page {
+  font-size: 36px;
+
+  @media screen and (min-width: $min-md) {
+    font-size: 48px;
+  }
+}
+
+.title-section {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.subtitle-main-page {
+  font-size: 24px;
+  font-weight: 500;
+
+  @media screen and (min-width: $min-md) {
+    font-size: 19px;
+    font-weight: normal;
+  }
+}

@@ -1,0 +1,22 @@
+//Базовые стили для кнопок писать тут.
+button {
+  outline: none !important;
+}
+
+.button {
+  padding: 0;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background $basic-transition, color $basic-transition;
+  border: none;
+}
+
+.button--link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
