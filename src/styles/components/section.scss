@@ -1,0 +1,13 @@
+.section__main--title {
+  position: relative;
+  height: calc(100vh - 90px);
+  background: url("../img/title-background.png") top right no-repeat;
+  background-size: 90% 70%;
+}
+
+.section__main--img {
+  width: 490px;
+  height: 680px;
+  margin-left: 110px;
+  margin-bottom: -60px;
+}

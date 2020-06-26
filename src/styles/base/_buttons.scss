@@ -2,3 +2,12 @@
 button {
   outline: none !important;
 }
+
+.button {
+  width: 290px;
+  height: 50px;
+  background: $blue;
+  border-radius: 10px;
+  border: 0;
+  color: $white;
+}

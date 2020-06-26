@@ -1,0 +1,26 @@
+.section__main--list {
+  margin-left: 85px;
+}
+
+.section__main--list-item {
+  position: relative;
+  width: 205px;
+  margin-bottom: 50px;
+  margin-left: 90px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: $grey;
+    left: -90px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

@@ -26,12 +26,14 @@ div {
 
 html {
   font-size: 18px;
+  font-weight: 300;
   line-height: 160%;
   color: $medium-grey;
 }
 
 body {
-  height: 100vh;
+  margin-top: 90px;
+  height: calc(100vh - 90px);
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
@@ -47,15 +49,15 @@ textarea {
   outline: none !important;
 }
 
-main {
-  position: relative;
-  transition: opacity 0.55s, transform 0.55s;
-
-  &:not(.is-loaded) {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-}
+//main {
+//  position: relative;
+//  transition: opacity 0.55s, transform 0.55s;
+//
+//  &:not(.is-loaded) {
+//    opacity: 0;
+//    transform: translateY(20px);
+//  }
+//}
 
 .container {
   width: 100%;
@@ -80,4 +82,12 @@ main {
 .img {
   object-fit: cover;
   object-position: center;
+}
+
+.pr {
+  position: relative;
+}
+
+.pa {
+  position: absolute;
 }
