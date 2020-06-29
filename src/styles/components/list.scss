@@ -24,3 +24,46 @@
     transform: translateY(-50%);
   }
 }
+
+.list-one__title {
+  width: 100%;
+}
+
+.list-one__title--text {
+  white-space: nowrap;
+}
+
+.list-one__title--line {
+  width: 100%;
+  height: 3px;
+  background: $blue;
+}
+
+.list-one__item {
+  &:nth-child(even) {
+    padding-left: 30px;
+  }
+
+  &:nth-child(odd) {
+    padding-left: 70px;
+  }
+}
+
+.list-two__item {
+  position: relative;
+  width: 200px;
+  margin-bottom: 25px;
+  padding-left: 30px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $blue;
+  }
+}
