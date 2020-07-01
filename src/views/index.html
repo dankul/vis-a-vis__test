@@ -83,9 +83,87 @@
           </div>
         </div>
       </section>
+      <section class="section__two container">
+        <div class="section__two__title d-flex mt-250 mr-130">
+          <h2 class="title title--great section__two__title--text mb-70">Lorem Ipsum</h2>
+          <span class="section__two__title--line mt-25 ml-30"></span>
+        </div>
+        <div class="d-flex mt-100 mr-130 ml-130">
+          <div class="section__two__info-item">
+            <img src="../img/sprites/sprite.svg#contact" class="img">
+            <span></span>
+            <p>Lorem Ipsum is simply dummy</p>
+          </div>
+          <div class="section__two__info-item">
+            <img src="../img/sprites/sprite.svg#phone" class="img">
+            <span></span>
+            <p>Lorem Ipsum is simply dummy</p>
+          </div>
+          <div class="section__two__info-item">
+            <img src="../img/sprites/sprite.svg#laptop" class="img">
+            <span></span>
+            <p>Lorem Ipsum is simply dummy</p>
+          </div>
+          <div class="section__two__info-item">
+            <img src="../img/sprites/sprite.svg#chat" class="img">
+            <span></span>
+            <p>Lorem Ipsum is simply dummy</p>
+          </div>
+          <div class="section__two__info-item last-item">
+            <img src="../img/sprites/sprite.svg#share" class="img">
+            <span></span>
+            <p>Lorem Ipsum is simply dummy</p>
+          </div>
+        </div>
+        <div class="d-flex mb-180 mt-120">
+          <span class="section__two__title--line mt-25"></span>
+          <button class="button ml-30">Lorem Ipsum</button>
+        </div>
+      </section>
+      <section class="section__three back-grey pt-160 pb-180">
+        <div class="container pl-325 d-flex d-flex--wrap">
+          <item-card
+                  v-for="item in elements"
+                  v-bind:content="item"
+                  v-bind:key="item.id"
+          />
+        </div>
+        <div class="ml-325 d-flex d-flex--space-between section__three--sub-items">
+          <div class="sub-item">
+            <span></span>
+            <p>Lorem Ipsum is simply</p>
+          </div>
+          <div class="sub-item">
+            <span></span>
+            <p>Lorem Ipsum is simply</p>
+          </div>
+          <div class="sub-item">
+            <span></span>
+            <p>Lorem Ipsum is simply</p>
+          </div>
+        </div>
+      </section>
+      <section class="section__three">
+        <h2>Lorem Ipsum is simply dummy text</h2>
+        <div class="content">
+          <form>
+            <h3>It is a long established fact that a reader</h3>
+            <input type="text">
+            <input type="text">
+            <input type="text">
+          </form>
+          <div class="info">
+            <h2>It is a long established fact that a reader</h2>
+            <a href="#">support@email.com</a>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+          </div>
+        </div>
+
+      </section>
     </main>
     //= includes/footer.html
     <!-- -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     //= includes/scripts.html
   </body>
 </html>

@@ -1,3 +1,3 @@
 'use strict';
 
-import './jquery-global.js';
+import './section__three';
