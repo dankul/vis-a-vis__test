@@ -65,19 +65,13 @@ textarea {
   margin: 0 auto;
   padding-left: 195px;
   padding-right: 195px;
+}
 
-  //Писать свои значения
-  // @media (min-width: $min-md) {
-  //   max-width: 980px;
-  // }
-
-  // @media (min-width: $min-lg) {
-  //   max-width: 1110px;
-  // }
-
-  // @media (min-width: 1500px) {
-  //   max-width: 1210px;
-  // }
+.container-low {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 325px;
+  padding-right: 325px;
 }
 
 .img {

@@ -4,6 +4,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>MRB</title>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+
     //= includes/head.html
   </head>
   <body>
@@ -30,7 +35,56 @@
           <img src="../img/section1.png" class="section__main--img img">
         </div>
       </section>
-      <section class="section__one back-grey ml-195">
+      <div class="d-flex ml-195 mb-m285">
+        <h2 class="mt-70 title title--section">Lorem</h2>
+        <div class="section__one--slider ml-130">
+          <div class="slide">
+            <div class="d-flex">
+              <span class="title title--great"> </span>
+              <h2>Lorem Ipsum</h2>
+            </div>
+            <ul>
+              <li>It is a long established fact that a reader will be distracted</li>
+              <li>The readable content</li>
+              <li>There are many variations of passages</li>
+            </ul>
+          </div>
+          <div class="slide">
+            <div class="d-flex">
+              <span class="title title--great"> </span>
+              <h2>Lorem Ipsum</h2>
+            </div>
+            <ul>
+              <li>It is a long established fact that a reader will be distracted</li>
+              <li>The readable content</li>
+              <li>There are many variations of passages</li>
+            </ul>
+          </div>
+          <div class="slide">
+            <div class="d-flex">
+              <span class="title title--great"> </span>
+              <h2>Lorem Ipsum</h2>
+            </div>
+            <ul>
+              <li>It is a long established fact that a reader will be distracted</li>
+              <li>The readable content</li>
+              <li>There are many variations of passages</li>
+            </ul>
+          </div>
+          <div class="slide">
+            <div class="d-flex">
+              <span class="title title--great"> </span>
+              <h2>Lorem Ipsum</h2>
+            </div>
+            <ul>
+              <li>It is a long established fact that a reader will be distracted</li>
+              <li>The readable content</li>
+              <li>There are many variations of passages</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="section__one back-grey ml-195 pt-360">
         <div class="mr-325 ml-130">
           <div class="section__one--list-one d-flex d-flex--wrap">
             <div class="list-one__title mt-25 d-flex">
@@ -69,14 +123,14 @@
               <p class="mb-70">of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
               <div class="section__one--list-two d-flex">
                 <ul>
-                  <li class="list-two__item">Lorem Ipsum</li>
-                  <li class="list-two__item">Lorem Ipsum</li>
-                  <li class="list-two__item">Lorem Ipsum</li>
+                  <li class="list-two__item title">Lorem Ipsum</li>
+                  <li class="list-two__item title">Lorem Ipsum</li>
+                  <li class="list-two__item title">Lorem Ipsum</li>
                 </ul>
                 <ul class="ml-30">
-                  <li class="list-two__item">Lorem Ipsum</li>
-                  <li class="list-two__item">Lorem Ipsum</li>
-                  <li class="list-two__item">Lorem Ipsum</li>
+                  <li class="list-two__item title">Lorem Ipsum</li>
+                  <li class="list-two__item title">Lorem Ipsum</li>
+                  <li class="list-two__item title">Lorem Ipsum</li>
                 </ul>
               </div>
             </div>
@@ -143,27 +197,35 @@
           </div>
         </div>
       </section>
-      <section class="section__three">
-        <h2>Lorem Ipsum is simply dummy text</h2>
-        <div class="content">
-          <form>
-            <h3>It is a long established fact that a reader</h3>
-            <input type="text">
-            <input type="text">
-            <input type="text">
-          </form>
-          <div class="info">
-            <h2>It is a long established fact that a reader</h2>
-            <a href="#">support@email.com</a>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+      <section class="section__four container-low pb-160 pt-300">
+        <h2 class="title title--section mb-80">Lorem Ipsum is simply dummy text</h2>
+        <div class="section__four--content d-flex">
+          <div class="section__four--form">
+            <h3 class="title title--small">It is a long established fact that a reader</h3>
+            <form class="d-flex d-flex--wrap">
+              <input type="text" placeholder="Name*" name="name" required>
+              <input type="text" placeholder="Phone*" name="phone" required>
+              <input type="text" placeholder="E-mail*" name="mail" required>
+              <input type="radio" name="radio" id="radio" class="section__four--input">
+              <label class="d-flex" for="radio">Lorem Ipsum is simply dummy text</label>
+              <button class="button">Lorem Ipsum</button>
+            </form>
+          </div>
+          <div class="info ml-97">
+            <h3 class="title title--small">It is a long established fact that a reader</h3>
+            <u><a href="#" class="title text-great">support@email.com</a></u>
+            <p class="text-small">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
           </div>
         </div>
-
       </section>
     </main>
     //= includes/footer.html
     <!-- -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     //= includes/scripts.html
   </body>
 </html>
