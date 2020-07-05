@@ -1,7 +1,7 @@
 let content = require('./array').items,
     item_card = require('./item-card');
 
-let section__three = new Vue({
+new Vue({
     data: {
         elements: content
     },

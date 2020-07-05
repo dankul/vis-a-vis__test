@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vue-slider-component@latest/theme/default.css">
 
     //= includes/head.html
   </head>
@@ -202,10 +202,19 @@
         <div class="section__four--content d-flex">
           <div class="section__four--form">
             <h3 class="title title--small">It is a long established fact that a reader</h3>
-            <form class="d-flex d-flex--wrap" id="form">
+            <form class="d-flex d-flex--wrap" id="data">
               <input type="text" placeholder="Name *" name="name" required>
               <input type="text" placeholder="Phone *" name="phone" required>
               <input type="text" placeholder="E-mail *" name="mail" required>
+              <div id="slider-price">
+                <vue-slider
+                        ref="slider"
+                        v-model="value"
+                        v-bind="options"
+                        :adsorb="true"
+                        :marks="marks"
+                ></vue-slider>
+              </div>
               <input type="radio" name="radio" id="radio" class="section__four--input">
               <label class="d-flex" for="radio">Lorem Ipsum is simply dummy text</label>
               <button class="button">Lorem Ipsum</button>
