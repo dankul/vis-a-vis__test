@@ -28,6 +28,8 @@ import plumber from 'gulp-plumber';
 import debug from 'gulp-debug';
 import clean from 'gulp-clean';
 import yargs from 'yargs';
+import ghPages from 'gulp-gh-pages';
+import gulp from 'gulp'
 
 const argv = yargs.argv;
 const production = !!argv.production;
@@ -371,5 +373,10 @@ export const prod = series(
   favs,
   fonts
 );
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
 
 export default development;
