@@ -374,9 +374,9 @@ export const prod = series(
   fonts
 );
 
-gulp.task('deploy', function() {
-  return gulp.src('./dist/**/*')
-    .pipe(ghPages());
-});
+export const publish = () =>
+  gulp.src("**/*", { cwd: "dest" }).pipe(ghPages({ branch: "gh-pages" }));
+
+export const deploy = gulp.series(prod, publish);
 
 export default development;
